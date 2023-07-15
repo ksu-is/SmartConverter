@@ -1,5 +1,5 @@
-- [] find related repositories and analyze them
-- [] test repository examples
-- [] document problems in code
-- [] add more features
-- [] make sure code runs smoothly
+- [X] find related repositories and analyze them
+- [ ] test repository examples
+- [ ] document problems in code
+- [ ] add more features
+- [ ] make sure code runs smoothly
