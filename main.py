@@ -18,7 +18,7 @@ def ok():
     try:
         inp = float(inputentry.get()) 
     except:
-        tkinter.messagebox.showerror("Error","Please enter integers only!") #If input isn't an integer, an error message will pop up
+        tkinter.messagebox.showerror("Error","Please enter integers only!") #If the input isn't an integer, an error message will pop up
     
     inp_unit = inputopt.get()
     out_unit = outputopt.get()
@@ -43,7 +43,7 @@ outputopt = StringVar()
 outputopt.set(OPTIONS[0])
 
 #Create the label
-inputlabel = Label(root, text = "Input\n(Integers Only!)") #only Integer shoulb be input
+inputlabel = Label(root, text = "Input\n(integers only)") #only Integer shoulb be input
 inputlabel.grid(row = 0, column = 0, pady = 20)
 
 inputentry = Entry(root, justify = "center")
