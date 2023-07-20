@@ -1,8 +1,9 @@
 - [X] create Readme file
 - [X] create roadmap file
 - [X] list tasks to be done
-- [ ] find related repositories and analyze them
-- [ ] test repository examples
+- [X] find related repositories and analyze them
+- [X] test repository examples
+- [X] create main.py file
 - [ ] document problems in code
 - [ ] add more features
 - [ ] make sure code runs smoothly
