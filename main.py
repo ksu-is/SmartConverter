@@ -31,28 +31,29 @@ def Convert():
   unit2 = menu2.get()
 
   try:
-    num = int(input.get())
+      num = int(input.get())
+      coverted_num = num
+      if unit1 == 'mm' and unit2 == 'cm':
+          converted_num = num/10
 
-  if unit1 == 'mm' and unit2 == 'cm':
-    converted_num = num/10
+      elif unit1 == 'mm' and unit2 == 'm':
+            converted_num = num/1000
 
-  elif unit1 == 'mm' and unit2 == 'm':
-    converted_num = num/1000
+      elif unit1 == 'cm' and unit2 == 'mm':
+            converted_num = num*10
 
-  elif unit1 == 'cm' and unit2 == 'mm':
-    converted_num = num*10
+      elif unit1 == 'cm' and unit2 == 'm':
+            converted_num = num/100
 
-  elif unit1 == 'cm' and unit2 == 'm':
-    converted_num = num/100
+      elif unit1 == 'm' and unit2 == 'mm':
+            converted_num = num*1000
 
-  elif unit1 == 'm' and unit2 == 'mm':
-    converted_num = num*1000
+      elif unit1 == 'm' and unit2 == 'cm':
+            converted_num = num*100
 
-  elif unit1 == 'm' and unit2 == 'cm':
-    converted_num = num*100
-
-except
-    output.config(text="Invalid Input")
+      output.config(text=str(converted_num))
+  except:
+      output.config(text="Invalid Input")
   
 b_convert = Button(window , text = "Convert" , command=Convert)
 b_convert.grid(row=3 , column=1)
