@@ -1,9 +1,12 @@
 from tkinter import *
 
 window = Tk()
-window.title("SmartConverter")
+window.geometry("400x100")
+window.title("Shivani's SmartConverter")
+window['bg'] = 'pink'
 
-Units = ['mm' , 'cm' , 'm']
+
+Units = [ 'mm' , 'cm' , 'm' , 'km' ]
 menu = StringVar()
 menu.set("mm")
 
@@ -19,7 +22,7 @@ dropmenu2.grid(row=1 , column=2)
 input = Entry(window,font=(20))
 input.grid(row=2, column=1)
 
-output = Label(window,width = 20,borderwidth=3 , relief="solid")
+output = Label(window,width = 20,borderwidth=2 , relief="solid")
 output.grid(row=2, column=2)
 
 def Clear():
@@ -39,17 +42,27 @@ def Convert():
       elif unit1 == 'mm' and unit2 == 'm':
             converted_num = num/1000
 
+      elif unit1 == 'mm' and unit2 == 'km':
+            converted_num = num/1000000
+     
       elif unit1 == 'cm' and unit2 == 'mm':
             converted_num = num*10
 
       elif unit1 == 'cm' and unit2 == 'm':
             converted_num = num/100
-
+      
+      elif unit1 == 'cm' and unit2 == 'km':
+            converted_num = num*0.00001
+      
       elif unit1 == 'm' and unit2 == 'mm':
             converted_num = num*1000
 
       elif unit1 == 'm' and unit2 == 'cm':
             converted_num = num*100
+    
+      elif unit1 == 'm' and unit2 == 'km':
+            converted_num = num/1000
+    
 
       output.config(text=str(converted_num))
   except:
