@@ -4,6 +4,6 @@
 - [X] find related repositories and analyze them
 - [X] test repository examples
 - [X] create main.py file
-- [ ] document problems in code
-- [ ] add more features
-- [ ] make sure code runs smoothly
+- [x] document problems in code
+- [x] add more features
+- [x] make sure code runs smoothly
